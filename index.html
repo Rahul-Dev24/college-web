@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <mata name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sri.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>College</title>
+        
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/sdaasc-logo.png" alt="loading..."></a>
+            <div class="nav_links" id="nav_links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <!-- <li><a href="blog.html">Bloge</a></li> -->
+                    <li><a href="contect.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="text_box">
+            <h1>Sri Devi Arts & Science<br>College,Ponneri</h1>
+            <p>Sridevi arts and science college is a co-educational institution.<br>Now it has 8 UG courses and 2 PG
+                courses.The college is affilate to the University of Madras...</p>
+            <a href="#" class="hello_btn" id="show-login">
+                <marquee direction="left">online Application 2022-23</marquee>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ---------------------------------online application form------------------------------------ -->
+
+    <div class="popup">
+        <div class="close_btn">&times;</div>
+        <div class="form">
+            <h2>Online Application</h2>
+            <form action="Admission_form.php" method="POST">
+                <div class="form_element">
+                    <label for="Email">Register No.</label>
+                    <input type="text" name="reg" id="email" placeholder="Enter Register No">
+                </div>
+                <div class="form_element">
+                    <label for="Email">Name</label>
+                    <input type="text" name="name" id="password" placeholder="Enter Name">
+                </div>
+                <div class="form_element">
+                    <label for="Email">password</label>
+                    <input type="text" name="mobile" id="password" placeholder="Enter Mobile No.">
+                </div>
+                <div class="form_element">
+                    <label for="Email">Father Name</label>
+                    <input type="text" name="Fname" id="password" placeholder="Enter Father Name">
+                </div>
+                <div class="form_element">
+                    <label for="Email">Mather Name</label>
+                    <input type="text" name="Mname" id="password" placeholder="Enter Mather Name">
+                </div>
+                <div class="form_element">
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me">Remember Me</label>
+                </div>
+                <div class="form_element">
+                    <button type="submit">Sing Up</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('#show-login').addEventListener("click", function () {
+            document.querySelector(".popup").classList.add("active");
+        });
+        document.querySelector('.popup .close_btn').addEventListener("click", function () {
+            document.querySelector(".popup").classList.remove("active");
+        });
+    </script>
+
+
+    <!-- ------------courses------------- -->
+
+    <section class="course">
+        <h1>Courses We offer</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit explicabo quos eligendi fugiat
+            voluptatibus ex pariatur ullam, aspernatur libero fuga?</p>
+
+        <div class="row" onclick="show_course()">
+            <div class="course_col" onclick="show_course()">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque exercitationem ea possimus.
+                    Possimus
+                    tempora, nostrum porro asperiores quaerat, natus iure nesciunt esse, non sint nisi delectus amet ad
+                    doloremque aut!</p>
+            </div>
+            <div class="course_col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque exercitationem ea possimus.
+                    Possimus
+                    tempora, nostrum porro asperiores quaerat, natus iure nesciunt esse, non sint nisi delectus amet ad
+                    doloremque aut!</p>
+            </div>
+            <div class="course_col">
+                <h3>Post Graguation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque exercitationem ea possimus.
+                    Possimus
+                    tempora, nostrum porro asperiores quaerat, natus iure nesciunt esse, non sint nisi delectus amet ad
+                    doloremque aut!</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- -----------------------campus--------------- -->
+    <center>
+        <section class="campus">
+
+            <h1>Our College Campus</h1><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="campus_col">
+                    <img src="images/542083_1624944999.jpeg">
+                    <div class="layer">
+                        <h3>Arts & Science</h3>
+                    </div>
+                </div>
+                <div class="campus_col">
+                    <img src="images/299957_1629710687.jpeg">
+                    <div class="layer">
+                        <h3>Nursing</h3>
+                    </div>
+                </div>
+                <div class="campus_col">
+                    <img src="images/OIP.jpg">
+                    <div class="layer">
+                        <h3>Enterence</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </center>
+<hr>
+    <!-- -------------------------------Facilities-------------------------------- -->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae!</p>
+
+        <div class="row">
+            <div class="facilities_col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+            <div class="facilities_col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+            <div class="facilities_col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+        </div>
+
+    </section>
+<hr>
+
+    <!-- ------------------------------testimonials------------------------------ -->
+
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae!</p>
+        <div class="row">
+            <div class="testimonials_col">
+                <img src="images/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, animi accusantium. Pariatur
+                        nemo dolorem laudantium ut, ex recusandae officiis laboriosam repellendus optio modi libero.
+                        Aliquam itaque quo cum corrupti id.</p>
+                    <h3>Riya</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+            </div>
+            <div class="testimonials_col">
+                <img src="images/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, animi accusantium. Pariatur
+                        nemo dolorem laudantium ut, ex recusandae officiis laboriosam repellendus optio modi libero.
+                        Aliquam itaque quo cum corrupti id.</p>
+                    <h3>Rithas sharama</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+<hr>
+    
+    <!-- ----------------------------------Events---------------------------------------------------------- -->
+    <section class="facilities">
+        <h1>Events Of Our College</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repudiandae!</p>
+
+        <div class="row">
+            <div class="facilities_col">
+                <img src="images/event1.jpeg" alt="" height="220px">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+            <div class="facilities_col">
+                <img src="images/event2.jpeg" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+            <div class="facilities_col">
+                <img src="images/event3.jpeg" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis reiciendis error recusandae tempora
+                    voluptatum cupiditate itaque fuga explicabo nobis asperiores.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ----------------------------------call to Action---------------------------------------- -->
+
+    <section class="cta">
+        <h1>Enroll for our various <br> online cource</h1>
+        <a href="" class="hello_btn">CONTACT US</a>
+
+    </section>
+
+
+    <!-- ----------------------------Footer-------------------------------------- -->
+
+
+    <footer>
+        <div class="row_f">
+            <div class="col_f">
+                <img src="images/sdaasc-logo.png" class="logo">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero non quia, nemo est odit labore?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quam.</p>
+
+            </div>
+            <div class="col_f">
+                <h3>office</h3>
+                <p>ITPL Road</p>
+                <p>new gummidipoondi</p>
+                <p>gummidipoondi</p>
+                <p>thruvalur distric ,tamil nadu</p>
+                <p class="email_id">Srideviartsandscience@gmail.com</p>
+                <h4>+91 2137129387139</h4>
+            </div>
+            <div class="col_f">
+                <h3>Rahul-Dev24</h3>
+                <p>I'am a full stack</p>
+                <p>Developer</p>
+                <p>I was create lots</p>
+                <p>of projects</p>
+                <p class="email_id">rahulsingh908714@gmail.com</p>
+                <h4>+91 -----------------</h4>
+            </div>
+            <div class="col_f"></div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- -----------java Script---------- -->
+    <script>
+        var nav_links = document.getElementById("nav_links");
+
+
+        function showMenu() {
+            nav_links.style.right = "0";
+            nav_links.style.display = "block";
+        }
+        function hideMenu() {
+            nav_links.style.right = "-200px";
+            nav_links.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
